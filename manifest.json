@@ -1,0 +1,16 @@
+{
+  "name": "Facebook Pu",
+  "version": "1.0.0",
+  "description": "funny facebook.",
+  "icons": { "48": "icon.png" },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.facebook.com/",
+        "https://www.facebook.com/"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
